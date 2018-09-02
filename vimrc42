@@ -1,0 +1,17 @@
+syntax on
+:set mouse=a
+:set nu
+:set showcmd
+:set cc=80
+inoremap < <><left>
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap ( ()<left>
+inoremap #de # define <right>
+inoremap #if #ifndef <right>
+inoremap #en #endif <right>
+inoremap #in #include <right>
+inoremap #! #!/usr/bin/
+inoremap <? <?php?> <left>

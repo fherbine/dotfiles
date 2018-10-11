@@ -1,0 +1,15 @@
+:set nu								"afficher le nombre de lignes
+:syntax on							"afficher la syntax
+:set showcmd						"afficher les commandes
+:set shiftwidth=4					"pour indentation de 4 blocks
+:set tabstop=4						"egalement
+if has("autocmd")					"indentation auto au retour a la ligne
+    filetype plugin indent on
+endif
+:set ruler							"affiche position dur cureseur
+:set cc=80
+:set hlsearch
+nnoremap <C-Up> <C-W>k
+nnoremap <C-Down> <C-W>j
+nnoremap <C-Right> <C-W>l
+nnoremap <C-Left> <C-W>h

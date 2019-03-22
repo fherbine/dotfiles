@@ -8,4 +8,9 @@ nnoremap <C-Up> <C-W>k
 nnoremap <C-Down> <C-W>j
 nnoremap <C-Right> <C-W>l
 nnoremap <C-Left> <C-W>h
-noremap <F5> <ESC>:!python main.py<CR>
+noremap <F5> <ESC>:!python main.py -m inspector<CR>
+noremap <F6> <ESC>:!python main.py<CR>
+set mouse=a
+set hlsearch
+au FileType gitcommit se tw=72
+autocmd FileType python map <buffer> <F3> :call Flake8()<CR>

@@ -1,4 +1,4 @@
-se sts=4 sw=4 et noai nocin si so=999
+se sts=4 sw=4 et ai si nocin so=999
 set nu								"afficher le nombre de lignes
 syntax on							"afficher la syntax
 set showcmd							"afficher les commandes
@@ -14,3 +14,6 @@ set mouse=a
 set hlsearch
 au FileType gitcommit se tw=72
 autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
+nmap <C-N> :bn<CR>
+nmap <C-P> :bp<CR>
+noremap <F1> <ESC>:!flake8<CR>

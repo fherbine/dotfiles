@@ -17,3 +17,4 @@ autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
 nmap <C-N> :bn<CR>
 nmap <C-P> :bp<CR>
 noremap <F1> <ESC>:!flake8<CR>
+noremap <F2> <ESC>:!flake8 %<CR>
